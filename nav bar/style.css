@@ -39,7 +39,7 @@ nav {
     background-color: #c33c3c;
     flex-shrink: 5;
     padding-left: 2rem;
-    width: 700px;
+    width: 450px;
     height: 50px;
     border-radius: 3rem;
 }
@@ -52,7 +52,7 @@ nav {
     border-radius: 3rem;
     z-index: 2;
     right: 0%;
-    width: 700px;
+    width: 450px;
     height: 50px;
 }
 
@@ -189,7 +189,7 @@ nav {
 }
 
 .nigeria[type=checkbox] {
-    opacity: 0.5;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -197,6 +197,9 @@ nav {
     z-index: 5;
     cursor: pointer;
     /* width: 300px; */
+}
+.country{
+    position: relative;
 }
 .nigeria[type=checkbox]:before {
     content: "";
@@ -226,14 +229,10 @@ nav {
     position: relative;
     height: 50px;
     width: 120px;
-    background-color: #ff0000;
+    /* background-color: #ff0000; */
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.nigeria-checkbox{
-    position: absolute;
-    top: 30px;
 }
 .en-svg>p {
     font-size: 23px;
@@ -247,20 +246,23 @@ nav {
 .display-countries{
     display: none;
 }
-.nigeria:checked ~.display-countries {
+.nigeria:checked ~ .display-countries{
     display: block;
     width: 400px;
     height: 450px;
-    border: 1px solid black;
+    border: 1px solid rgb(209, 209, 209);
     padding: 1rem 2rem;
     background-color: #fff;
-    border-radius: 3rem;
-    position: relative;
+    border-radius: 2rem;
+    position: absolute;
+    top: 80px;
+    right: 1rem;
 }
 
 .check-country {
     width: 100%;
-    position: relative;
+    top: 0px;
+    position: absolute;
 }
 
 .check-country-display {
