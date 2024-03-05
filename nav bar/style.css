@@ -187,12 +187,10 @@ nav {
     color: #000;
     font-size: 1.3rem;
 }
-.country{
-    position: relative;
-}
+
 .nigeria[type=checkbox] {
     opacity: 0.5;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -203,7 +201,7 @@ nav {
 .nigeria[type=checkbox]:before {
     content: "";
     display: block;
-    /* position: relative; */
+    position: absolute;
     width: 120px;
     height: 50px;
     top: 0;
@@ -225,7 +223,7 @@ nav {
     left: 6px;
 }
 .nigerian-absolute {
-    position: absolute;
+    position: relative;
     height: 50px;
     width: 120px;
     background-color: #ff0000;
@@ -233,7 +231,10 @@ nav {
     justify-content: center;
     align-items: center;
 }
-
+.nigeria-checkbox{
+    position: absolute;
+    top: 30px;
+}
 .en-svg>p {
     font-size: 23px;
     color: #fff;
@@ -246,7 +247,7 @@ nav {
 .display-countries{
     display: none;
 }
-.nigeria:checked~.display-countries {
+.nigeria:checked ~.display-countries {
     display: block;
     width: 400px;
     height: 450px;
@@ -541,11 +542,7 @@ nav {
     padding: 1rem 9.7rem;
     position: relative;
     display: inline;
-    top: 299px;
+    top: 300px;
     border-radius: 3rem;
     background-color: #000000;
-}
-.contact-icon{
-    /* position: absolute   ; */
-    right: 200px;
 }
