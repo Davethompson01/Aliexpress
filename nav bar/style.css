@@ -548,3 +548,54 @@ nav {
     border-radius: 3rem;
     background-color: #000000;
 }
+.value{
+    width: 100%;
+    /* background-color: #000; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.value-for-money{
+    width: 80%;
+    /* height: 200px; */
+    /* background-color: #c33c3c; */
+}
+.value-for-money>img{
+    /* object-fit: contain; */
+    width: 100%;
+}
+.hero{
+    width: 80%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 100px 100px; */
+    grid-template-areas:
+    'hero1 hero2 hero3 hero3 hero3 '
+    'hero4 hero2 hero3 hero3 hero3 '
+    'hero4 hero2 hero5 hero5 hero5 '
+    ;
+}
+.grid{
+    padding: 10px;
+}
+header{
+    grid-area: hero1;
+    background-color: red;
+}
+main{
+    grid-area: hero2;
+    background-color: green;
+}
+aside{
+    grid-area: hero3;
+    background-color:#555555;
+}
+nav{
+    grid-area: hero4;
+    background-color: cornflowerblue;
+}
+footer{
+    grid-area: hero5;
+    background-color: yellow;
+}
