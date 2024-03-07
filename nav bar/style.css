@@ -13,7 +13,7 @@ ul {
 }
 
 /* starrt nav */
-nav {
+.one {
     height: 100px;
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -36,7 +36,7 @@ nav {
     font-size: 48px;
 }
 @media (max-width:1322px) {
-    nav {
+    .one {
         height: 100px;
         width: 100%;
         background-color: rgb(0, 0, 0);
@@ -61,7 +61,7 @@ nav {
     }
 }
 @media (max-width:1315px) {
-    nav {
+    .one {
         height: 100px;
         width: 100%;
         background-color: rgb(0, 0, 0);
@@ -83,7 +83,7 @@ nav {
         background-size: cover;
         font-size: 30px;
     }
-    nav {
+    .one {
         height: 80px;
         width: 100%;
         background-color: rgb(0, 0, 0);
@@ -162,7 +162,7 @@ nav {
         right:15px;
     }
     
-    nav {
+    .one {
         height: 60px;
         width: 100%;
         background-color: rgb(0, 0, 0);
@@ -821,7 +821,7 @@ footer{
 }
 
 @media (max-width:1078px) {
-    nav {
+    .one {
         height: 60px;
         width: 100%;
         background-color: rgb(0, 0, 0);
@@ -946,7 +946,7 @@ footer{
     right: 1rem;
 }
 .nigeria[type=checkbox] {
-    opacity: 0.5;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 13px;
@@ -999,7 +999,7 @@ footer{
     /* background-color: #ccc; */
 }
 .icon[type=checkbox] {
-    opacity: 0.5;
+    opacity: 0;
     position: absolute;
     top: 0px;
     left:0px;
@@ -1084,121 +1084,9 @@ footer{
         background-color: white;
     }
 
-
-
 }
-.ham-menu{
-    position: fixed;
-      right: 0;
-      top: 0;
-     background-color: blueviolet; 
-     width: 300px;
-     height: 100vh;
-     z-index: 0;
-     display: none;
+@media (max-width:791px) {
+    .one{
+        display: none;
     }
-    .toggler{
-    width: 50px;
-    height: 50px;
-    /* border-radius: 50%; */
-    position: absolute;
-      top: 20px;
-      left: 1rem;
-      z-index: 3;
-      opacity: 0; 
-    }
-    .menu-1{
-    background-color: black;
-        width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 20px;
-    left: 1rem;
-    }
-    .menu-1>div{
-        background-color: rgb(255, 255, 255);
-        width:70% ;
-        height: 2px;
-        position: relative;  
-    }
-    .menu-1>div::after{
-        /* background-color: red; */
-        width:100% ;
-        top: -8px;
-        height: 2px;
-        background-color: rgb(255, 255, 255);
-        content: '';
-        position: absolute;
-    }
-    .menu-1>div::before{
-        /* background-color: red; */
-        width:100% ;
-        top: 8px;
-        height: 2px;
-        background-color: rgb(255, 255, 255);
-        content: '';
-        position: absolute;
-    }
-    .toggler:checked +  .menu-1 > div{
-        transform: rotate(135deg);
-    }
-    /* .toggler:checked:hover + .menu-1 >div{
-        transform: rotate(225deg);
-    }     */
-    .toggler:checked + .menu-1 > div::after,
-    .toggler:checked + .menu-1 > div::before{
-       transform: rotate(90deg);
-       top: 0;
-    }
-    .toggler:checked +.menu-1 +.list{
-        translate: 0;
-    }
-    .list {
-        /* position: relative; */
-        margin-right: 8rem; 
-        width: 300px;
-        background-color: #0c396d;
-        /* max-width: 80rem; */
-        height: 500px;
-        /* margin-top: 140%; */
-        color: white;
-        translate: 100%;
-        transition: translate 0.5s;
-      }
-      .list li {
-      list-style-type: none;
-       padding-top: 2rem;
-    }
-    .list ul li::after {
-      content: "";
-      /* width: 0; */
-      height: 500px;
-      position: absolute;
-      bottom: -5px;
-      background-color: aqua;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #fff;
-      transition: 0.3s;
-    }
-    /* .menu ul li:hover::after {
-      width: 50%;
-    }  */
-    
-    
-    @media (max-width:800px) {
-        .one{
-            display: none;
-        }
-        .two{
-            display: block;
-            z-index: 999;
-        }
-        .ham-menu{
-     display: block;
-    }
-    }
+}
