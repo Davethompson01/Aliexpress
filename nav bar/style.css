@@ -14,12 +14,14 @@ ul {
 
 /* starrt nav */
 nav {
-    height: 300px;
+    height: 100px;
     width: 100%;
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
     display: flex;
     gap: 2rem;
-    padding: 2rem 2rem 1rem 4.2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
     /* padding-left: 8rem; */
 }
 
@@ -33,7 +35,64 @@ nav {
     background-size: cover;
     font-size: 48px;
 }
+@media (max-width:1322px) {
+    nav {
+        height: 100px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        /* padding-left: 8rem; */
+    }
+    .background-clip {
+        color: #fff;
+        background-image: url(1080x1080.webp);
+        -webkit-background-clip: text;
+        background-clip: text;
+        /* background-position: center; */
+        background-size: cover;
+        font-size: 40px;
+    }
+    .en-svg>h1{
+        font-size: 16px;
+    }
+}
+@media (max-width:1315px) {
+    nav {
+        height: 100px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        /* padding-left: 8rem; */
+    }
 
+}   
+@media (max-width:1237px) {
+
+    .background-clip {
+        color: #fff;
+        background-image: url(1080x1080.webp);
+        -webkit-background-clip: text;
+        background-clip: text;
+        /* background-position: center; */
+        background-size: cover;
+        font-size: 30px;
+    }
+    nav {
+        height: 80px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        gap: 1rem;
+        padding: 2rem;
+        /* padding-left: 8rem; */
+    } 
+}
 .important {
     position: relative;
     background-color: #c33c3c;
@@ -44,12 +103,14 @@ nav {
     border-radius: 3rem;
 }
 
+
 .iphone-pro {
     position: absolute;
     border: none;
     padding-left: 2rem;
     top: 0px;
     border-radius: 3rem;
+    flex-shrink: 5;
     z-index: 2;
     right: 0%;
     width: 450px;
@@ -68,7 +129,50 @@ nav {
 .input-display {
     display: none;
 }
+@media (max-width:1237px) {
 
+    .important {
+        position: relative;
+        background-color: #c33c3c;
+        /* flex-shrink: 5; */
+        padding-left: 2rem;
+        width: 350px;
+        height: 30px;
+        border-radius: 3rem;
+    }
+    .iphone-pro {
+        position: absolute;
+        border: none;
+        padding-left: 2rem;
+        top: 0px;
+        border-radius: 3rem;
+        flex-shrink: 5;
+        z-index: 2;
+        right: 0%;
+        width: 350px;
+        height: 30px;
+    }
+    .search-icon-1>img {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 0px;
+        /* right: 20px; */
+        z-index: 3;
+        right: 0px;
+    }
+    nav {
+        height: 60px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        /* padding-left: 8rem; */
+    } 
+}
 .important:hover+.input-display {
     top: 130px;
     height: 500px;
@@ -76,7 +180,7 @@ nav {
     z-index: 9;
     padding: 1rem;
     background-color: #ada4a4;
-    width: 900px;
+    width: 550px;
     display: flex;
     justify-content: space-around;
     border-radius: 2rem;
@@ -235,12 +339,12 @@ nav {
     align-items: center;
 }
 .en-svg>p {
-    font-size: 23px;
+    font-size: 15px;
     color: #fff;
 }
 
 .en-svg>h1 {
-    font-size: 25px;
+    font-size: 17px;
     color: #fff;
 }
 .display-countries{
@@ -591,11 +695,292 @@ aside{
     grid-area: hero3;
     background-color:#555555;
 }
-nav{
+/* nav{
     grid-area: hero4;
     background-color: cornflowerblue;
-}
+} */
 footer{
     grid-area: hero5;
     background-color: yellow;
+}
+.icon[type=checkbox] {
+    opacity: 0;
+    position: relative;
+    top: 0;
+    left: 15px;
+    bottom: 0;
+    z-index: 5;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* display: flex; */
+    cursor: pointer;
+    /* width: 300px; */
+}
+
+.icon[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 49px;
+    top: 0;
+    left: 0px;
+    border: 2px solid #555555;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.icon[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+.contact-icon{
+    display: block;
+    position: relative;
+}
+.contact-svg{
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+   
+}
+.contact-svg>ion-icon{
+    color: #fff;
+}
+.hover-icon{
+    display: none;
+    max-height: 400px;
+    overflow-y: hidden;
+    overflow-y: scroll;
+}
+.icon:checked~.hover-icon{
+    display: grid;
+    background-color: white;
+    border:  1px solid gray;
+    width: 300px;
+    border-radius: .5rem;
+    justify-content: space-evenly;
+    gap: 2rem;
+    position: absolute;
+    top: 80px;
+}
+.welcome>p{
+    color: #fff;
+    font-size: 10px;
+}
+.welcome>h3{
+    color: #fff;
+    font-size: 15px;
+    
+}
+.contact-svg{
+    width: 170px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    display:flex;
+    /* background-color: #ada4a4; */
+}
+.contact-svg>ion-icon{
+    font-size: 3rem;
+}
+.p-box, .p-box-2{
+    display: grid;
+    gap: 1rem;
+}
+.p-box>p, .p-box-2{
+    font-size: 20px;
+}
+.p-box > p :hover, .p-box-2 > p :hover{
+    color: red;
+}
+.cart-icon{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    /* background-color: #fff; */
+}
+.cart-ion{
+    color: #fff;
+    font-size: 2rem;
+}
+.js-number > h1{
+    color: #fff;
+    font-size: 1rem;
+}
+.js-number>ion-icon{
+    color: #fff;
+}
+
+@media (max-width:1078px) {
+    nav {
+        height: 60px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        /* padding-l
+        eft: 8rem; */
+    } 
+    .scan-svg {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* height: 40px; */
+        width: 120px;
+        /* background-color: plum; */
+    }
+    .scan-svg img{
+        width: 35px;
+    }
+    .scan-svg>p{
+        font-size: 11px;
+        max-width: 2cm;
+    }
+    .en-svg>p{
+            font-size: 10px;
+            color: #fff;
+        }
+        
+        .en-svg>h1 {
+            font-size: 12px;
+            color: #fff;
+        }
+        .contact-svg>ion-icon{
+            font-size: 1.5rem;
+        }
+        .welcome>h3{
+            font-size: 12px;
+            font-weight: 200;
+        }
+        .cart-ion{
+            font-size: 1.5rem;
+        }
+        .nigerian-absolute {
+            position: relative;
+            height: 50px;
+            width: 80px;
+            /* background-color: #ff0000; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-svg{
+            width: 130px;
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+            display:flex;
+            /* background-color: #ada4a4; */
+        }
+        .important {
+            position: relative;
+            background-color: #c33c3c;
+            /* flex-shrink: 5; */
+            padding-left: 2rem;
+            width: 300px;
+            height: 30px;
+            border-radius: 3rem;
+        }
+        .iphone-pro {
+            position: absolute;
+            border: none;
+            padding-left: 2rem;
+            top: 0px;
+            border-radius: 3rem;
+            flex-shrink: 5;
+            z-index: 2;
+            right: 0%;
+            width: 300px;
+            height: 30px;
+        }
+
+
+
+}
+@media (max-width:967px) {
+    .scan-svg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 40px; */
+    width: 50px;
+    /* background-color: plum; */
+}
+    .scan-svg>img{
+        width: 50px;
+    }
+    .scan-svg>p{
+        display: none;
+    }
+    .Nigeria-img>img{
+        width: 50px;
+    }
+    .en-svg>p{
+        display: none;
+    }
+    .en-svg>h1{
+        display: none;
+    }
+    .nigeria:checked ~ .display-countries{
+    display: block;
+    width: 400px;
+    height: 450px;
+    border: 1px solid rgb(209, 209, 209);
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    position: absolute;
+    top: 80px;
+    right: 1rem;
+}
+.nigeria[type=checkbox] {
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    cursor: pointer;
+    /* width: 300px; */
+}
+.country{
+    position: relative;
+}
+.nigeria[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.nigeria[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}    
+
+
 }
