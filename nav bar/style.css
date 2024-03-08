@@ -585,7 +585,7 @@ ul {
 }
 
 .e[type=checkbox] {
-    opacity: 0.5;
+    opacity: 0;
     position: absolute;
     top: 38px;
     left: 0;
@@ -700,53 +700,13 @@ ul {
     width: 100%;
 }
 
-.hero {
-    width: 80%;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: 100px 100px; */
-    grid-template-areas:
-        'hero1 hero2 hero3 hero3 hero3 '
-        'hero4 hero2 hero3 hero3 hero3 '
-        'hero4 hero2 hero5 hero5 hero5 '
-    ;
-}
-
-.grid {
-    padding: 10px;
-}
-
-header {
-    grid-area: hero1;
-    background-color: red;
-}
-
-main {
-    grid-area: hero2;
-    background-color: green;
-}
-
-aside {
-    grid-area: hero3;
-    background-color: #555555;
-}
-
-/* nav{
-    grid-area: hero4;
-    background-color: cornflowerblue;
-} */
-footer {
-    grid-area: hero5;
-    background-color: yellow;
-}
 
 .icon[type=checkbox] {
-    opacity: 0.5;
+    opacity: 0;
     position: relative;
-    top: 0px;
+    top: -15px;
     left: 15px;
-    bottom: 0;
+    /* bottom: 0; */
     z-index: 5;
     /* align-items: center; */
     /* justify-content: center; */
@@ -759,7 +719,7 @@ footer {
     content: "";
     display: block;
     position: relative;
-    width: 200px;
+    width: 150px;
     height: 49px;
     top: 0;
     left: 0px;
@@ -807,7 +767,7 @@ footer {
     display: grid;
     background-color: white;
     border: 1px solid gray;
-    width: 300px;
+    width: 250px;
     border-radius: .5rem;
     justify-content: space-evenly;
     gap: 2rem;
@@ -885,6 +845,24 @@ footer {
 }
 
 @media (max-width:1078px) {
+    .value {
+        width: 100%;
+        /* background-color: #000; */
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    .value-for-money {
+        width: 90%;
+        /* height: 200px; */
+        /* background-color: #c33c3c; */
+    }
+    
+    .value-for-money>img {
+        /* object-fit: contain; */
+        width: 100%;
+    }
     .one {
         height: 60px;
         width: 100%;
@@ -986,6 +964,7 @@ footer {
 }
 
 @media (max-width:967px) {
+
     .scan-svg {
         display: flex;
         align-items: center;
@@ -1029,7 +1008,7 @@ footer {
     }
 
     .nigeria[type=checkbox] {
-        opacity: 0.5;
+        opacity: 0;
         position: absolute;
         top: 0;
         left: 13px;
