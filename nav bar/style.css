@@ -1220,7 +1220,7 @@ footer{
     }
     .toggler:checked ~.popular-category{
         position: absolute;
-        top: 50px;
+        top: 35px;
         display: grid;
         gap: 2rem;
         padding: 1rem 2rem;
@@ -1228,7 +1228,7 @@ footer{
         overflow-y: scroll;
         height: 100vh;
         /* transform: translateX(0%); */
-        transition: all 2s;
+        transition: all 0.5s;
         z-index: 30;
         /* z-index: 30; */
         width: 300px;
