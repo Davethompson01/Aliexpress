@@ -1253,6 +1253,14 @@ footer{
         .value{
             display: none;
         }
+        .nav-section{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100px;
+            z-index: 30;
+            background-color: #fff;
+        }
     .two{
         /* display: block; */
         /* height: 50px; */
@@ -1278,6 +1286,8 @@ footer{
         width: 99%;
     }
     .location{
+        top: 100px;
+        position: relative;
         width: 100%;
         padding: .5rem;
         justify-content: center;
@@ -1285,6 +1295,9 @@ footer{
         display: block;
     }
     .coin-games{
+        position: absolute;
+        top: 120px;
+        width: 100%;
         height: 150px;
         /* background-color: #555555; */
         justify-content: space-around;
@@ -1300,7 +1313,67 @@ footer{
         transform: scale(1.2);
         transition: all 1s ease;
     }
+    .items-forms{
+        padding: 1rem;
+        max-width: 100%;
+        position: relative;
+        top: 220px;
+    }
+    .items-form-us{
+        display: grid;
+        gap: 1rem;
+    }
+    .items-form-img{
+        max-width: 800px;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        /* overflow-x:scroll; */
+        /* overflow-x: hidden; */
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        /* overflow-wrap: break-word; */
+        justify-content: space-between;
+        /* background-color: #ada4a4; */
 
+        /* overscroll-behavior-x: auto; */
+    }
+    .items-form-img>div{
+        position: relative;
+        width: 400px;
+        padding: 0rem 3rem;
+        background-color: #d4d2d2;
+        height: 300px;
+        border-radius: 1rem;
+        justify-content: center;
+        /* align-items: center; */
+        /* display: flex; */
+    }
+    .price-tag{
+        justify-content:center;
+        align-items: center;
+        position: absolute;
+        top: 320px;
+        display: flex;
+    }
+    .red-ngn{
+        font-size: 13px;
+        color: red;
 
+    }
+    .underline{
+        text-decoration:line-through;
+        font-size: 13px;
+        color: gray;
+    }    
+    .grid-food img, .items-watch>img, .furball>img, .airbods-6>img, .wifi-cam>img{
+        width: 200px;
+        height: 200px;
+    }
+    .more{
+        position: relative;
+        
+    }
 
     }
