@@ -991,11 +991,9 @@ footer{
     top: 2px;
     left: 6px;
 }    
-.welcome{
-    display: none;
-}
 .contact-svg>ion-icon{
-    font-size: 3rem;
+    color: #fff;
+    font-size: 2rem;
 }
 .contact-svg{
     width: 48px;
@@ -1006,8 +1004,11 @@ footer{
     /* display:flex; */
     /* background-color: #ccc; */
 }
+.welcome{
+    display: none;
+}
 .icon[type=checkbox] {
-    opacity: 0;
+    opacity: 0.5;
     position: absolute;
     top: 0px;
     left:0px;
@@ -1021,7 +1022,7 @@ footer{
     content: "";
     display: block;
     position: relative;
-    width: 50px;
+    width: 35px;
     /* height: 49px; */
     top: 0;
     left: 0px;
@@ -1054,6 +1055,7 @@ footer{
         font-size: 2rem;
     }   
     .contact-svg>ion-icon{
+        color: floralwhite;
         font-size: 2rem;
     }
     .scan-svg>img{
@@ -1172,9 +1174,10 @@ footer{
         right: 0;
         top: 5px;
         z-index: 1;
-        color: rgb(255, 255, 255);
+        color: red;
     }
-    .contact-cart{
+    .contact-cart>ion-icon{
+        color: #000;
         font-size: 2rem;
     }
     
@@ -1233,22 +1236,71 @@ footer{
         /* z-index: 30; */
         width: 300px;
     }
-
+    .coin-games{
+        display: none;
+    }
+    .three{
+        display: none;
+    }
+    .location{
+        display: none;
+    }
     @media (max-width:791px) {
         .one{
             display: none;
         }
-    
+
+        .value{
+            display: none;
+        }
     .two{
         /* display: block; */
         /* height: 50px; */
         position: relative;
         width: 100%;
         /* padding: 1rem; */
-        background-color: thistle;
+        /* background-color: thistle; */
         justify-content: space-between;
         align-items: center;
         display: flex;
     }
-    
+    .three{
+        width: 100%;
+        padding: .5rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        /* background-color: #555555; */
+    }
+    #three{
+        padding: .5rem;
+        border-radius: 3rem;
+        width: 99%;
+    }
+    .location{
+        width: 100%;
+        padding: .5rem;
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
+    .coin-games{
+        height: 150px;
+        /* background-color: #555555; */
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+
+    }
+    .coin>img, .superdeals>img, .games>img, .plus>img{
+        width: 100px;
+        height: 100px;
+    }
+    .coin>img:hover, .superdeals>img:hover, .games>img:hover, .plus>img:hover{
+        transform: scale(1.2);
+        transition: all 1s ease;
+    }
+
+
+
     }
