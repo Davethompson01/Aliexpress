@@ -52,7 +52,7 @@ ul {
     }
     
     .background-clip {
-        color: #fff;
+        color: transparent;
         background-image: url(1080x1080.webp);
         -webkit-background-clip: text;
         background-clip: text;
@@ -79,7 +79,7 @@ ul {
 @media (max-width:1237px) {
 
     .background-clip {
-        color: #fff;
+        color: transparent;
         background-image: url(1080x1080.webp);
         -webkit-background-clip: text;
         background-clip: text;
@@ -806,6 +806,9 @@ footer{
 .p-box > p :hover, .p-box-2 > p :hover{
     color: red;
 }
+.contact-cart>ion-icon{
+    color: #fff;
+}
 .cart-icon{
     display: flex;
     height: 50px;
@@ -816,6 +819,7 @@ footer{
     color: #fff;
     font-size: 2rem;
 }
+
 .js-number > h1{
     color: #fff;
     font-size: 1rem;
@@ -1098,9 +1102,9 @@ footer{
     /* border-radius: 50%; */
     position: absolute;
       top: 5px;
-      left: 0rem;
+      left: 10px;
       z-index: 3;
-      opacity: 0.5; 
+      opacity: 0; 
     }
     .menu-1{
     background-color: black; 
@@ -1113,12 +1117,13 @@ footer{
     justify-content: center;
     position: absolute;
     top: 5px;
-    left: 0rem;
+    left: .7rem;
     }
     .menu-1>div{
         background-color: rgb(244, 58, 58);
         width:70% ;
         height: 2px;
+        left: 0px;
         position: relative;  
     }
     .menu-1>div::after{
@@ -1129,7 +1134,7 @@ footer{
         background-color: rgb(255, 49, 49);
         content: '';
         position: absolute;
-        
+        left: 0;
     }
     .menu-1>div::before{
         /* background-color: red; */
@@ -1166,10 +1171,11 @@ footer{
         position: absolute;
         right: 0;
         top: 5px;
-        color: red;
+        z-index: 1;
+        color: rgb(255, 255, 255);
     }
     .contact-cart{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .header{
@@ -1214,7 +1220,7 @@ footer{
     }
     .toggler:checked ~.popular-category{
         position: absolute;
-        top: 0px;
+        top: 50px;
         display: grid;
         gap: 2rem;
         padding: 1rem 2rem;
@@ -1223,6 +1229,7 @@ footer{
         height: 100vh;
         /* transform: translateX(0%); */
         transition: all 2s;
+        z-index: 30;
         /* z-index: 30; */
         width: 300px;
     }
